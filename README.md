@@ -1,4 +1,4 @@
-# Dive-into-Sequence
+#  Sequence Networks  
 
 
 ### Overview of RNN 
