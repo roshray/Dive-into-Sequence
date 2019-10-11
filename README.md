@@ -64,3 +64,7 @@ Four Effective ways to learn RNN -
 **NOTE Manupulating GATES,a recurrent network is able to remember what it needs and forget what is no longer useful.**
 
 ![gates_formu:medium](https://github.com/roshray/Dive-into-Sequence/blob/master/img/gates_formu.gif)
+
+[CODE](https://github.com/roshray/Dive-into-Sequence/blob/master/LSTM-02.ipynb)
+
+
