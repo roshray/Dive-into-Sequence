@@ -14,7 +14,8 @@
                      \ p^t = softmax(o^t)       .........(4)
                     \end{equation*}$$
 
-**the parameters are the bias vectors b and c along with the weight matrices U , V and W , respectively, for input-to-hidden, hidden-to output and hidden-to-hidden connections. This is an example of a recurrent network that maps an input sequence to an output sequence of the same length.**
+**the parameters are the bias vectors `b` and `c` along with the weight matrices `U , V and W` , respectively, for `input-to-hidden`, `hidden-to output` and `hidden-to-hidden` connections. 
+This is an example of a recurrent network that maps an input sequence to an output sequence of the same length.**
 
 
 
@@ -46,19 +47,25 @@
 - 2)WRITE GATE or INPUT GATE is responsible for writing data into memory cell.
 
       Information gets into the cell whenever its "WRITE" gate is ON.
+      
       Its recieve the same input and the state of the network__
+      
       It also recieve the recurrent net's output data from the most current time step.
+      
       It uses the input to detemine how much of the output data should be written in memory cell.
       
 - 3)KEEP GATE or FORGET GATE is maintains or delete data from memory cell.
 
       The Informaion stays in the cell so long as its "KEEP" gate is ON.
+      
       Its recieve the same input and the state of the network and then calculates how much of the current data should be remember.
 
 - 4)READ GATE or OUTPUT GATE reads data from information cell and send back to recurrent network.
 
       Information can be read from the cell on its "READ" gate.
+      
       It reads a value from information cell,and this value is interpreted as signal between -1 and 1.
+      
       The input data and state of the network are then used to dtermine how much of this signal should be send to the recurrent network.
       
 **NOTE Manupulating GATES,a recurrent network is able to remember what it needs and forget what is no longer useful.**
