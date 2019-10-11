@@ -5,14 +5,14 @@
 
 ![unfold_RNN](https://github.com/roshray/Dive-into-Sequence/blob/master/img/unfold-rnn.jpg)
 
-### RNN network steps
+### RNN network steps 
 
-     $$\begin{equation*}
-     \ a^t = b + Ws^{t-1} + Ux^t .........(1)\\
-     \ s^t = tanh(a^t)           .........(2)\\
-      \ o^t = c + Vs^t           .........(3)\\
-      \ p^t = softmax(o^t)       .........(4)
-     \end{equation*}$$
+                $$\begin{equation*}
+                    \ a^t = b + Ws^{t-1} + Ux^t .........(1)\\
+                    \ s^t = tanh(a^t)           .........(2)\\
+                     \ o^t = c + Vs^t           .........(3)\\
+                     \ p^t = softmax(o^t)       .........(4)
+                    \end{equation*}$$
 
 the parameters are the bias vectors b and c along with the weight matrices U , V and W , respectively, for input-to-hidden, hidden-to output and hidden-to-hidden connections. This is an example of a recurrent network that maps an input sequence to an output sequence of the same length
 
@@ -20,7 +20,7 @@ the parameters are the bias vectors b and c along with the weight matrices U , V
 
 ![derivation](https://github.com/roshray/Dive-into-Sequence/blob/master/img/derivation.jpg)
 
-Four Effective ways to learn RNN - 
+**Four Effective ways to learn RNN -** 
 
      1)LSTM:They are designed to remember values for long time.
 
@@ -38,6 +38,8 @@ Four Effective ways to learn RNN -
 
 
 #### Brief understanding of Long Short Term Memory ::
+
+![key_Elements_LSTM](https://github.com/roshray/Dive-into-Sequence/blob/master/img/LSTM_GATE.jpg)
 
 - 1)A memory cell or Information cell using logistic and linear units with multiplicative interactions.
 
