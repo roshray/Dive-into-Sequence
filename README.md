@@ -14,11 +14,9 @@
                      \ p^t = softmax(o^t)       .........(4)
                     \end{equation*}$$
 
-the parameters are the bias vectors b and c along with the weight matrices U , V and W , respectively, for input-to-hidden, hidden-to output and hidden-to-hidden connections. This is an example of a recurrent network that maps an input sequence to an output sequence of the same length
+**the parameters are the bias vectors b and c along with the weight matrices U , V and W , respectively, for input-to-hidden, hidden-to output and hidden-to-hidden connections. This is an example of a recurrent network that maps an input sequence to an output sequence of the same length.**
 
-### Derivation attempt
 
-![derivation](https://github.com/roshray/Dive-into-Sequence/blob/master/img/derivation.jpg)
 
 **Four Effective ways to learn RNN -** 
 
@@ -66,6 +64,11 @@ the parameters are the bias vectors b and c along with the weight matrices U , V
 **NOTE Manupulating GATES,a recurrent network is able to remember what it needs and forget what is no longer useful.**
 
 ![gates_formu:medium](https://github.com/roshray/Dive-into-Sequence/blob/master/img/gates_formu.gif)
+
+### Derivation attempt
+
+![derivation](https://github.com/roshray/Dive-into-Sequence/blob/master/img/derivation.jpg)
+
 
 [CODE](https://github.com/roshray/Dive-into-Sequence/blob/master/LSTM-02.ipynb)
 
