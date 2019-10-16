@@ -3,7 +3,6 @@
 
 ### Overview of RNN 
 
-![unfold_RNN](https://github.com/roshray/Dive-into-Sequence/blob/master/img/unfold-rnn.jpg)
 
 ### RNN network steps 
 
@@ -13,6 +12,10 @@
                      \ o^t = c + Vs^t           .........(3)\\
                      \ p^t = softmax(o^t)       .........(4)
                     \end{equation*}$$
+
+
+![unfold_RNN](https://github.com/roshray/Dive-into-Sequence/blob/master/img/unfold-rnn.jpg)
+
 
 **the parameters are the bias vectors `b` and `c` along with the weight matrices `U , V and W` , respectively, for `input-to-hidden`, `hidden-to output` and `hidden-to-hidden` connections. 
 This is an example of a recurrent network that maps an input sequence to an output sequence of the same length.**
@@ -40,11 +43,11 @@ This is an example of a recurrent network that maps an input sequence to an outp
 
 ![key_Elements_LSTM](https://github.com/roshray/Dive-into-Sequence/blob/master/img/LSTM_GATE.jpg)
 
-- 1)A memory cell or Information cell using logistic and linear units with multiplicative interactions.
+- 1)`A memory cell or Information cell` using logistic and linear units with multiplicative interactions.
 
       It is responsible for holding the data and the three logistic GATES(write,keep and read) define the flow of data inside the LSTM.
 
-- 2)WRITE GATE or INPUT GATE is responsible for writing data into memory cell.
+- 2)`WRITE GATE or INPUT GATE` is responsible for writing data into memory cell.
 
       Information gets into the cell whenever its "WRITE" gate is ON.
       
@@ -54,13 +57,13 @@ This is an example of a recurrent network that maps an input sequence to an outp
       
       It uses the input to detemine how much of the output data should be written in memory cell.
       
-- 3)KEEP GATE or FORGET GATE is maintains or delete data from memory cell.
+- 3)`KEEP GATE or FORGET GATE` is maintains or delete data from memory cell.
 
       The Informaion stays in the cell so long as its "KEEP" gate is ON.
       
       Its recieve the same input and the state of the network and then calculates how much of the current data should be remember.
 
-- 4)READ GATE or OUTPUT GATE reads data from information cell and send back to recurrent network.
+- 4)`READ GATE or OUTPUT GATE` reads data from information cell and send back to recurrent network.
 
       Information can be read from the cell on its "READ" gate.
       
